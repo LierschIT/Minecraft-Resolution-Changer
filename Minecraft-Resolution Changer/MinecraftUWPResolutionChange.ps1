@@ -36,7 +36,6 @@ if ($ConfigPath -ne $true) {
         Write-Host "4. User Custom Config"
         Write-Host " "
         Write-Host "Please choose a resolution you want to play Minecraft for Windows 10: " -ForegroundColor Red -NoNewline
-        $Choice = 1
         $Choice = Read-Host
         Write-Host " "
         if ($Choice -eq 1) {
@@ -79,7 +78,7 @@ if ($ConfigPath -ne $true) {
 $userresolution = Import-CSV -Path .\Config.csv
 
 
-# Changing screen resolution esolution
+# Changing screen resolution
 Write-Host ("Changing screen resolution to " + $userresolution[0].width + "x" + $userresolution[0].height + ".") -ForegroundColor Cyan
 Set-ScreenResolution -Width $userresolution[0].width -Height $userresolution[0].height
 
