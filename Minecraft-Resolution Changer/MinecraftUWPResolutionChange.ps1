@@ -38,6 +38,8 @@ function func_resolution {
     $funcvar_resolution | Export-CSV -Path "Config.csv"
     return 1
 }
+
+# Function to get the value from the user
 function func_userchoice {
     param (
         $funcvar_object
