@@ -9,6 +9,13 @@ In particular if you use RTX Resource Packs for Minecraft for Windows 10, the na
 
 The best solution is to reduce the resolution. This script helps you to do this automatically with one double click.
 
+## Requirements
+You need to start Powershell with administrator privilege rights and execute the following command:
+```powershell
+Set-ExecutionPolicy Unrestriced
+```
+**You enabling unrestricted script support. So please be carefull which scripts you are using!**
+
 ## Usage
 Double click on the "Start Minecraft-Resolution Changer.cmd". It will start automatically the Powershell Script.
 
